@@ -1,0 +1,35 @@
+{
+  "title": "PrtScr to Shift-Command-Ctrl-4 - screenshot to clipboard",
+  "rules": [
+    {
+      "description": "PrtScr to Shift-Command-Ctrl-4 - screenshot to clipboard",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+          "from": {
+            "key_code": "print_screen"
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "right_shift",
+                "right_control",
+                "right_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
+      

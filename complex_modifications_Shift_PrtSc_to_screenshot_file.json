@@ -1,0 +1,39 @@
+{
+  "title": "Shift-PrtScr to Shift-Command-4 - screenshot to file",
+  "rules": [
+    {
+      "description": "Shift-PrtScr to Shift-Command-4 - screenshot to file",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+          "from": {
+            "key_code": "print_screen",
+            "modifiers": {
+              "mandatory": [
+                "right_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "4",
+              "modifiers": [
+                "right_shift",
+                "right_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
+      

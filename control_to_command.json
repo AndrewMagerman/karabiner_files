@@ -1,0 +1,102 @@
+{
+  "title": "Andrew's modifications",
+  "rules": [
+    {
+      "description": "left command to left control",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "right command to right control",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "right_control"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "left control to left command",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "right control to right command",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.vmware\\.fusion$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+          "from": {
+            "key_code": "right_control"
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
+      
